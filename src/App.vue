@@ -1,7 +1,8 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome Vue.js App"/>
+  <img alt="Vue logo" src="./assets/ff-logo-v1.png">
+  <HelloWorld msg="Welcome to Fungible.Farm"/>
 </template>
+
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'

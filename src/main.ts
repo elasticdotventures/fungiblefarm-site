@@ -3,8 +3,20 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
+
+// ...
+
+
 createApp(App).use(store).use(router).mount('#app')
 
+
+
+/* 
+	import { SVG } from '@svgdotjs/svg.js'
+	// import '@svgdotjs/svg.draggable.js'
+	var draw = SVG().addTo('#drawing')
+	var rect = draw.rect(100, 100).attr({ fill: '#f06' })
+*/
 
 // code from https://github.com/vuejs/vue-devtools/issues/1244
 // devtools.ts

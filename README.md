@@ -1,5 +1,10 @@
 # fungiblefarm
 
+
+## Azure
+https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestaticwebapps
+
+
 ## Project setup
 ```
 npm install

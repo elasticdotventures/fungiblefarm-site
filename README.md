@@ -1,5 +1,8 @@
 # fungiblefarm-site
 
+this is setup to automatically push to fungible.farm when the git repo is updated. 
+
+
 ## Project setup
 ```
 npm install

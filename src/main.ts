@@ -3,13 +3,22 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
+// import Vue plugin
+import VueSvgInlinePlugin from "vue-svg-inline-plugin";
 
 // ...
 
 
-createApp(App).use(store).use(router).mount('#app')
-
-
+const app = createApp(App);
+app.use(store)
+app.use(router)
+app.use(VueSvgInlinePlugin,{
+	attributes: {
+		clone: [ "viewbox" ],
+		merge: [ "class", "style" ]
+	}
+});
+app.mount('#app')
 
 /* 
 	import { SVG } from '@svgdotjs/svg.js'

@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <FFLogo />
-    <Counter />
+  
     <HelloWorld msg="info (at) fungible.farm"/>
   </div>
 </template>

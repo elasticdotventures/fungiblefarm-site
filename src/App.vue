@@ -9,6 +9,13 @@
 </template>
 
 <style lang="scss">
+
+@font-face {
+  font-family: "SEGA";
+  src: url("/fonts/sega/SEGA.TTF") format("ttf");
+}
+
+/*
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -29,4 +36,6 @@
     }
   }
 }
+*/ 
+
 </style>

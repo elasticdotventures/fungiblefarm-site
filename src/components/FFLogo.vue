@@ -103,10 +103,6 @@
 //      * https://labs.thisdot.co/blog/your-first-vue-3-app-using-typescript
 
 
-// https://www.npmjs.com/package/vue-decorator
-// esline-disable-next-line
-// import {Vue, Options, /*Prop,*/ Ref } from 'vue-decorator'
-// import Component from 'vue-class-component'
 import { defineComponent } from 'vue';  // ?? wtf
 
 interface State {
@@ -130,18 +126,6 @@ https://www.vuemastery.com/blog/getting-started-with-typescript-and-vuejs/
 export default defineComponent({
     name: 'FFLogo',
 
-    // props are READ ONLY
-    // @Prop({default:"none"}) babyShroomDisplay!: string
-    // @Prop({default:"none"}) teenShroomDisplay!: string
-    // @Prop({default:"inline"}) bigShroomDisplay!: string
-    // @VModel({ type: String }) bigShroomDisplay!: string
-
-     // @Ref('babyShroom') readonly babyShroom!: SVGElement;
-     /* 
-     private list: Array<object> = [
-         { "babyShroomDisplay":"inline" }
-     ]
-     */
     data: (): State => {
         return {
             nextShroom: 'baby',
@@ -153,26 +137,7 @@ export default defineComponent({
          }
     }, 
 
-    // count = 0
-    /* $refs!:{
-         FFlogo: SVGElement
-    }; */ 
-
-
     mounted() {
-        // FFLogo.props.babyShroomDisplay = "none"
-        // this.$refs["babyShroom"].display = "none"
-        /* 
-        const draw = SVG(this.$refs["FFlogo"] );
-        draw.rotate(180,0,0).fill('#000000')
-        this.$refs["FFLogo"] = draw;
-        this.$refs["x"] = "test";
-        alert('mounted0')
-        const canvas = ( |this.$refs["FFlogo"] ) ; ) ;
-        alert('mounted1')
-        canvas.rotate(180)
-        alert('mounted2')
-        */
        this.startTimer();
     }, 
 
@@ -180,21 +145,18 @@ export default defineComponent({
         shroomIn(shroomType: string) {
             switch(shroomType) {
                 case 'baby':
-                    // this.babyShroomDisplay = (this.babyShroomDisplay == 'none')?"block":"none"
                     this.babyShroomDisplay = 'block'
                     this.teenShroomDisplay = 'none'
                     this.daddyShroomDisplay = 'none'
                     this.nextShroom = 'teen'
                     break;
                 case 'teen':
-                    // this.teenShroomDisplay = (this.teenShroomDisplay == 'none')?"block":"none"
                     this.babyShroomDisplay = 'none'
                     this.teenShroomDisplay = 'block'
                     this.daddyShroomDisplay = 'none'
                     this.nextShroom = 'daddy'
                     break;
                 case 'daddy':
-                    // this.daddyShroomDisplay = (this.daddyShroomDisplay == 'none')?"block":"none"
                     this.babyShroomDisplay = 'none'
                     this.teenShroomDisplay = 'none'
                     this.daddyShroomDisplay = 'block'
@@ -223,17 +185,7 @@ export default defineComponent({
         }
     }, 
 
-    //  msg!: string
-    // public $refs: Vue['$refs'] & {
-    //    ffLogo: FFLogo
-    // };
-    // protected mounted(): void {
-    //    this.$refs.exampleComponent.exampleFunction();
-    // }
-
-    // this.$refs["FFlogo"].focus();
+  
 })
-
-// FFLogo.use(svgJS);
 
 </script>

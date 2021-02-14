@@ -15,6 +15,10 @@ import FFLogo from '@/components/FFLogo.vue';
 /*
   Tailwind
   https://medium.com/@FlorianWoelki/vue-3-and-tailwindcss-2041fea3bcd
+
+  vue-gtag-next
+  https://github.com/MatteoGabriele/vue-gtag-next
+  fungible.farm -- G-6R6LJ2JELF
 */
 
 @Options({

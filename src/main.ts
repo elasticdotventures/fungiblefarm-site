@@ -14,10 +14,25 @@ import './assets/tailwind.css'
 
 // ...
 
+/*
+  vue-gtag-next
+  https://github.com/MatteoGabriele/vue-gtag-next
+  fungible.farm -- G-6R6LJ2JELF
+*/ 
+import VueGtag from "vue-gtag-next";
+
 
 const app = createApp(App);
 app.use(store)
 app.use(router)
+
+app.use(VueGtag, {
+	property: {
+		id: "G-6R6LJ2JELF"
+		// params: {}
+	}
+  });
+
 /* 
 app.use(VueSvgInlinePlugin,{
 	attributes: {

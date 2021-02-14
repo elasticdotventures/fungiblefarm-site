@@ -1,6 +1,9 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 import Home from '../views/Home.vue'
 
+// https://matteo-gabriele.gitbook.io/vue-gtag/v/next/router-tracking
+import { trackRouter } from "vue-gtag-next";
+
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
@@ -21,5 +24,7 @@ const router = createRouter({
   history: createWebHashHistory(),
   routes
 })
+
+trackRouter(router);
 
 export default router

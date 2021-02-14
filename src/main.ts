@@ -4,7 +4,13 @@ import router from './router'
 import store from './store'
 
 // import Vue plugin
-import VueSvgInlinePlugin from "vue-svg-inline-plugin";
+// import VueSvgInlinePlugin from "vue-svg-inline-plugin";
+
+/*
+TODO: I've disable purge.css in the tailwind.config.js 
+	https://medium.com/@kyis/vue-tailwind-purgecss-the-right-way-c70d04461475
+*/ 
+import './assets/tailwind.css'
 
 // ...
 
@@ -12,12 +18,14 @@ import VueSvgInlinePlugin from "vue-svg-inline-plugin";
 const app = createApp(App);
 app.use(store)
 app.use(router)
+/* 
 app.use(VueSvgInlinePlugin,{
 	attributes: {
 		clone: [ "viewbox" ],
 		merge: [ "class", "style" ]
 	}
 });
+*/ 
 app.mount('#app')
 
 /* 

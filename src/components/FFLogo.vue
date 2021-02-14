@@ -1,13 +1,13 @@
 
 <template>
-    <div @click="fun">
+    <div class="mx-auto px-4" @click="fun">
         <!--
             <img alt="FF logo" id="FFlogo" ref="FFlogo" style="width:400px" src="../assets/FungibleFarm-v1.svg" />
         -->
         <!-- 
             <img class="icon" v-svg-inline style="width:400px" src="../assets/FungibleFarm-v1.svg" alt="FF Logo" />
         -->
-<svg width="100%" height="100%" viewBox="0 0 2111 406" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:5;">
+<svg class="object-contain" width="100%" height="100%" viewBox="0 0 2111 406" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:5;">
     <g id="Artboard1" transform="matrix(1,0,0,0.880694,-801,-623.531)">
         <rect x="801" y="708" width="2111" height="461" style="fill:none;"/>
         <g>

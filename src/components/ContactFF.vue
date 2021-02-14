@@ -56,7 +56,7 @@ import iconLinkedIn from '@iconify-icons/brandico/linkedin-rect';
 import iconSkype from '@iconify-icons/brandico/skype';
 import iconEmail from '@iconify-icons/mdi/email';
 import iconPhone from '@iconify-icons/mdi/phone-classic';
-
+// import iconMap from '@iconify-icons/mdi/map-marker-radius';
 
 interface State {
     icons: any;

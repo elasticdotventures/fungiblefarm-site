@@ -1,5 +1,15 @@
+<style lang="scss">
+
+// https://sass-lang.com/documentation/syntax/special-functions
+@font-face {
+  font-family: "SEGA";
+  src: url("/fonts/sega/SEGA.TTF") format("truetype");
+}
+</style>
+
 
 <template>
+
     <div class="mx-auto px-4" @click="fun">
         <!--
             <img alt="FF logo" id="FFlogo" ref="FFlogo" style="width:400px" src="../assets/FungibleFarm-v1.svg" />
